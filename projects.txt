@@ -2,7 +2,7 @@ This is a list of the projects I have done:
 
 ****FALL 2012****
 
--Brick breaker.
+-Brick breaker. (13) 
 -Hokuyo laser shield .
 
 ****SPRING/SUMMER 2013****
@@ -16,16 +16,16 @@ This is a list of the projects I have done:
 ****SPRING 2014****
 
 -FSAE Director of Safety Systems
--Humanoid Robotic Hand with Palm Actuation
+-Humanoid Robotic Hand with Palm Actuation (12) 
 
 ****FALL 2014****
 
--Mobile Robot Programming
+-Mobile Robot Programming (11) 
 
 
 ****SPRING 2015****
--Desktop water fountain spectrum display
--Inverted pendulum
+-Desktop water fountain spectrum display (10) 
+-Inverted pendulum (9) 
 -Intro to Robotics projects
 
 
@@ -34,8 +34,12 @@ This is a list of the projects I have done:
 
 
 ****SPRING 2016****
-
--Strength augmentation arm 
--trashBot
--Robotics capstone
+-Hough Transform CV Project (8) 
+-Scene Regonition with Bag of Words (7)
+-Augmented Reality with Planar Homographies (6) 
+-3D Reconstruction (5) 
+-Object Tracking in Videos (4)  
+-Strength augmentation arm (3)
+-trashBot (2) 
+-Robotics capstone (1) 
 
