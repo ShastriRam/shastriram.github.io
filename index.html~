@@ -98,8 +98,7 @@
                     <h2>Portfolio</h2>
                     <hr class="star-primary">
                 </div>
-            </div>
-	    
+            </div>	    
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -110,8 +109,7 @@
                         </div>
                         <img src="img/portfolio/ez_kart_1.jpg" height="650" width="900" class="img-responsive" alt="">
                     </a>
-                </div>
-		
+                </div>		
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -121,8 +119,7 @@
                         </div>
                         <img src="img/portfolio/trashBot_0.jpg"  height="650" width="900" class="img-responsive" alt="">
                     </a>
-                </div>
-		
+                </div>		
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -132,8 +129,7 @@
                         </div>
                         <img src="img/portfolio/ironManArm_0.jpg"  height="650" width="900"  class="img-responsive" alt="">
                     </a>
-                </div>
-		
+                </div>		
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -143,8 +139,7 @@
                         </div>
                         <img src="img/portfolio/objTracking_1.jpg"  height="650" width="900"  class="img-responsive" alt="">
                     </a>
-                </div>
-		
+                </div>		
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -152,10 +147,9 @@
                                 <i> 3D Image Reconstruction  </i>
                             </div>
                         </div>
-                        <img src="img/portfolio/3dRecon_0.jpg"  height="650" width="900" class="img-responsive" alt="">
-                    </a>
-		    
-                </div>
+                        <img src="img/portfolio/3dRecon_0.JPG"  height="650" width="900" class="img-responsive" alt="">
+                    </a>		    
+                </div>	
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -163,10 +157,9 @@
                                 <i> Augmented Reality with Planar Homographies </i>
                             </div>
                         </div>
-                        <img src="img/portfolio/ar_1.jpg"  height="650" width="900" class="img-responsive" alt="">
+                        <img src="img/portfolio/ar_1.JPG"  height="650" width="900" class="img-responsive" alt="">
                     </a>
-                </div>
-		
+                </div>		
 		<div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -176,8 +169,7 @@
                         </div>
                         <img src="img/portfolio/sceneRecognition_1.jpg"  height="650" width="900" class="img-responsive" alt="">
                     </a>
-                </div>
-		
+                </div>		
 		<div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -185,10 +177,9 @@
                                 <i> Hough Transform CV Project  </i>
                             </div>
                         </div>
-                        <img src="img/portfolio/houghTranform_1.jpg"  height="650" width="900" class="img-responsive" alt="">
+                        <img src="img/portfolio/houghTransform_1.jpg"  height="650" width="900" class="img-responsive" alt="">
                     </a>
                 </div>
-
 		<div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -199,7 +190,6 @@
                         <img src="img/portfolio/invertedPendulum_1.jpg"  height="650" width="900" class="img-responsive" alt="">
                     </a>
                 </div>
-
 		<div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -210,7 +200,6 @@
                         <img src="img/portfolio/desktopWaterFountain_1.jpg"  height="650" width="900" class="img-responsive" alt="">
                     </a>
                 </div>
-
 		<div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -221,7 +210,6 @@
                         <img src="img/portfolio/mobileRobot_1.jpg"  height="650" width="900"  class="img-responsive" alt="">
                     </a>
                 </div>
-
 		<div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -232,7 +220,6 @@
                         <img src="img/portfolio/roboticHand_1.jpg"  height="650" width="900"  class="img-responsive" alt="">
                     </a>
                 </div>
-
 		<div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal13" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -242,10 +229,7 @@
                         </div>
                         <img src="img/portfolio/brickBreaker_1.jpg"  height="650" width="900" class="img-responsive" alt="">
                     </a>
-                </div>
-
-		
-		
+                </div>		
             </div>
         </div>
     </section>
@@ -419,8 +403,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div>    
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -438,7 +421,7 @@
                             <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
 			     <div class="embed-responsive embed-responsive-16by9">
-			      <iframe class="embed-responsive-item" src="https://youtu.be/XqpwfsxM8Rs"></iframe>
+			      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/XqpwfsxM8Rs"></iframe>
 			    </div>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -460,8 +443,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div>    
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -498,8 +480,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div>    
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -536,8 +517,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div>    
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -574,8 +554,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    
+    </div>    
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -613,7 +592,6 @@
             </div>
         </div>
     </div>
-
     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -651,7 +629,6 @@
             </div>
         </div>
     </div>
-
 <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -689,7 +666,6 @@
             </div>
         </div>
 </div>
-
 <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -727,7 +703,6 @@
             </div>
         </div>
 </div>
-
 <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -765,7 +740,6 @@
             </div>
         </div>
 </div>
-
 <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -803,7 +777,6 @@
             </div>
         </div>
 </div>
-
 <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -821,7 +794,7 @@
                             <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
 			    <div class="embed-responsive embed-responsive-16by9">
-			      <iframe class="embed-responsive-item" src="https://youtu.be/NTCotT_jZDQ"></iframe>
+			      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/NTCotT_jZDQ"></iframe>
 			    </div>
 			    <ul class="list-inline item-details">
                                 <li>Client:
@@ -844,7 +817,6 @@
             </div>
         </div>
 </div>
-
 <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -862,7 +834,7 @@
                             <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
 			    <div class="embed-responsive embed-responsive-16by9">
-			      <iframe class="embed-responsive-item" src="https://youtu.be/OoRdledLkzQ"></iframe>
+			      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/OoRdledLkzQ"></iframe>
 			    </div>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -885,7 +857,6 @@
             </div>
         </div>
 </div>
-
 <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -923,7 +894,6 @@
             </div>
         </div>
 </div>
-
 <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -961,7 +931,6 @@
             </div>
         </div>
 </div>
-
 <div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
