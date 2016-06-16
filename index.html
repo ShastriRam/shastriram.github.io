@@ -330,26 +330,42 @@
                             <img src="img/portfolio/ez_kart_1.jpg" class="img-responsive img-centered" alt="">
                             <p>
 			      EZ-Kart is an robotic cart that is able to autonomously "follow" in front of a user. This robot was the final  project for the Spring 2016 Robotics Capstone course (16-474) at Carnegie Mellon University. My most major contributions to the project were the development of the controller and the power system. EZ-Kart was built and designed with the collaboration of Clayton Ritcher and Mopewa Ogundipe. Warehouse workers' bodies face a lot of stress and fatigue from constantly pushing heavy carts around the building. EZ-Kart was designed to ease this burden.</p>
-
+			    <br>
+			    </br>
 			    <p>
 			      All the processing is done on an Dell Inspiron laptop running Ubuntu 14.04 and ROS Idigo Igloo. EZ-Kart uses speech recognition to start and stop following with the words "EZ-Kart Start" and "EZ-Kart Stop" respectively. The user speaks to the robot via a bluetooth headset with feeds the audio input into a speech recognition library. The robot locates a user using the April Tag computer vision library. The user wears the April tag at chest height and the images captured from the PS Eye camera is fed into the library which returns the distance of the user from the robot, as well as the angular offset of the user from the robot. 
 			    </p>
 
+			    <br>
+			    </br>
+			    
 			    <p>
 			      A message with the distance and angle offset is passed to the controller. The controller consists of two series PD control loops, which output the left and right motor PWM signals. The PWM signals are passed to an ROS/Arduino node which sends the PWM signals via serial to an Arduino Uno. The signal is then relayed to the motor controllers for each wheel. The motors have been limited to move at walking speed (approximately 3 mph) and were selected with a gearbox which enable the robot to easily carry 30lbs of cargo. 
 			    </p>
+
+			    <br>
+			    </br>
 
 			    <p>
 			      Additionally EZ-Kart has an ultrasonic distance sensor detects situated at the front of the robot. It alerts the controller when an object is with 2 feet of the robot and the controller responds by immediately stopping the robot. The user can then walk backwards to move the robot from the obstacle or can take manual control of the robot itself. The ability to have the robot be manually pushed in the case of an obtacle or low battery was a design criteria of the project. 
 			    </p>
 
+			    <br>
+			    </br>
+
 			    <p>
 			      The robot features a very simple but effective user interface. Three LED lights located on the hanldle illuminates to let the user know if there a low battery, an obtacle detected or if the robot has lost the user. Additionally, the robot had the ability to speak, alerting the user audibly if any of these situation arise. The entire robot is powered from a rechargeable sealed lead acid battery. A power distribution board splits the voltage along a 12V and 5V rail to power different components. Additionally, an inverter conencted to the battery, powers the laptop.	The system is capable of continuous operation for 4 hours.            </p>
 
+                            <br>
+			    </br>
+			    
 			    <p>
 			      EZ-Kart was developed with the user in mind. The system is hands free and easy to use. It has the form factor of a traditional cart and the user virtually pushes the cart in a manner similar to pushing a traditional cart. This maintains a level of familiarity for users. 
 			    </p>
-
+			    
+			     <br>
+			    </br>
+			    
 			    <p>
 			      Below is the video of the demo of EZ-Kart </p>
 			    
