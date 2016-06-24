@@ -402,13 +402,67 @@
                             <h2>TrashBot</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/trashBot/meWithRobot.jpg" class="img-responsive img-centered" alt="">
-                            <p>TrashBot was my Electrical and Computer Engineering capstone project for Mechatronic Design (18-578) course. For this project, I was the principal embedded software engineer and the power/electrical system designer. TrashBot was built in collaboration with Akash Sonthalia, Vikas Sonthalia, Stephen Cunningham, Sophia Acevdo and Astha Keshan.
+                            <p>TrashBot is a trash sorting robot.  It  was my Electrical and Computer Engineering capstone project for Mechatronic Design (18-578). For this project, I was the principal embedded software engineer and the power/electrical system designer. TrashBot was built in collaboration with Akash Sonthalia, Vikas Sonthalia, Stephen Cunningham, Sophia Acevdo and Astha Keshan. The requirements for TrashBot were:
+			      
+<ul style="list-style-type:disc">
+  <li>Classify trash into four categories: metal, glass, plastic and other.</li>
+  <li>Sort/store trash input into two categories: recyclables(metal/plastic/glass) and non-recyclables(other).</li>
+  <li>Trash input slot must be at a minimum of 40" high.</li>
+  <li>Total machine volume cannot exceed 42 gallons.</li>
+  <li>Must have the to count the number of objects in each classification category.</li>
+  <li>The bins must have a combined capacity of 30 gallons, and must be easily removable.</li>
+  <li>Must accept 15 trash items at an average speed of 1 item/3 seconds.</li>
+  <li>Must have a classification accuracy of 85% and a sorting accuracy of 85%.</li>
+</ul>
 			    </p>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      TrashBot uses outputs from an array of sensors to determine the type of object that needs to be sorted. A trash item is deposited into the chute at the top of the robot. The presence of an object is detected with an ultrasonice distance sensor located at the top of the chute. An inductive proximity sensor detects whether the object is metal or not. If the object is metal, it drops into the second compartment which translates to the recyclables bin. If the object is not metal, the other sensors are read. The chute contains two IR(Infrared) sensors which measure the reflectivity of IR light at a wavelength on 810nm. The chute flap opens and drops the trash item into the second compartment where the the weight of the object is detected with a load cell. All of the data from the sensors is fed into the Arduino Mega micro-controller which runs a decision tree algorithm to make a calculated guess to determine the type of trash. The box then translates left or right to deposit the trash into the approrate bin.    
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      Ultrasonic distance sensors above the bin determine the bin fullness. The bin fullness along with the number of each type of item is displayed on the LCD screen. The front acrylic panel is displayed green when it is safe for the user to input a trash item and red when it is not. *Insert Pic of UI here*
+			    </p>
+
+			    <br>
+                            </br>
+			    <p>
+			      All of the processing and classification occurs on the Arduini Mega micro-controller. The code runs the statechart pictured below. *Insert pic of statechart* 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      The cyberphyhsical architect is laid out as shown below. The Arduino Uno controls the UI LED Lights. A second micro-controller was needed because the control of the lights greatly slowed down the execution of the main loop in the Arduino Mega, which in turn cause the trash sorting and classification to run longer than it should. *Include pic of cyberphysical architecture*
+			    </p>
+
+			    <br>
+			    </br
+
+			      <p>
+				From calculations, it was determined that the system would need a max of 5A. Additionaly some componenets needed 12V while others needed 5V. A power supply was selected that had the ability to deliver the amperage at 12V. A regulator stepped the 12V down to 5V. The power system employed the use of fuse boxes to distribute the 5V and 12V supplies. The benefits of the fuse box design included ease of wiring, ease of debugging and the ability to keep the wiring in a systematic manner. An emergency stop button and a breaker were included to protect the system from faults. The power system wiring diagram is shown below. *Include pic of power system*
+				</p>
+
+			      <br>
+			      </br>
+
+			    <p>
+			      TrashBot was a resounding success. My team won 1st place in the design competition, sorting 15 objects in 37 seconds with a classification ad sorting accuracy of 93%!! Enjoy our video below!
+			      </p>
 
 			    <div class="embed-responsive embed-responsive-16by9">
 			      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/XqpwfsxM8Rs"></iframe>
 			    </div>
-                           
+
+			    <br>
+			    </br>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
