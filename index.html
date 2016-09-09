@@ -701,22 +701,29 @@
                         <div class="modal-body">
                             <h2>Hough Transform CV Project</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <img src="img/portfolio/houghTransform_1.jpg" class="img-responsive img-centered" alt="">
+                             <p>
+			       This project employed the use of image processing algorithms to create a Hough Transform based line detector, using the Matlab programming environment. For this project, Matlab's built in image processing toolbox was not used. The input image was convolved with gaussian and sobel filters to obtain the x and y derivatives of the image. Non-maximum suppression was then used to get egdes that are one pixel wide. The result of these operations would give the edges of the objects in the image. However, the goal was to extract the lines of the image. To this end, the lines were extracted using the Hough Transform method. Each edge in the image voted for the possible line that it could represent. These votes were stored in an accumulator. The accumulator then underwent non-maximum supression to determine the main lines from the image.
+			         
+			    </p>
+			    
+			    <br>
+			    </br>
+
+			    <p>
+			      It must be noted that the success of the line detector depends heavily on the values of different parameters throughout the image processing pipeline. This is discussed in my final report, linked below. The final report also gives the results.  INCLUDE IMAGES OF BEST RESULTS!!!
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      <a href="documents/houghExperimentResults.pdf">Experiemental Analysis Report of the Hough Transform Line Extractor</a>
+			    </p>
+
+			    <br>
+			    </br> 
+			    
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
