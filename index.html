@@ -164,7 +164,7 @@
                     <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i> Scene Recognition with Bag of Words  </i>
+                                <i> Scene Recognition with Bag of Words and SVMs  </i>
                             </div>
                         </div>
                         <img src="img/portfolio/sceneRecognition_1.jpg"  height="650" width="900" class="img-responsive" alt="">
@@ -667,21 +667,46 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Scene Recognition with Bag of Words</h2>
+                            <h2>Scene Recognition with Bag of Words and SVMs</h2>
                             <hr class="star-primary">
 			
                             <img src="img/portfolio/sceneRecognition_1.jpg" class="img-responsive img-centered" alt="">
-                            <p>The aim of this project was to develop a system that would be able to classify an image into 8 categories: aquarium, beach, bridge, conference room, gas station, park, parking lot and waterfall. Two
-			      approaches were taken, a bag of words method using a spatial matching histogram and a support vector machine (SVM). </p>
+                            <p>The aim of this project was to develop a system that would be able to classify an image into 8 categories: aquarium,
+			      beach, bridge, conference room, gas station, park, parking lot and waterfall. Two approaches were taken, a bag of words
+			      method using a spatial matching histogram and a support vector machine (SVM). </p>
 
 			    <br>
 			    </br>
 
 			    <p>
-			      A bank of 38 filters (gaussian, sobel, laplacian, and gabor) were appliied to each image in the training set. Points were selected from the filter responses and clustered using K-Means to create the
-			      the visual words for the 
+			      A bank of 38 filters (gaussian, sobel, laplacian, and gabor) were appliied to each image in the training set. Points were
+			      selected from the filter responses and clustered using K-Means to create the visual words for the dictionary. Then each image
+			      in the training set was represented using the visual words and a spatial pyramid matching histogram was used to capture semantic
+			      meaning from the image. TO classify an image in the training set, the image was represented using the visual words, its spatial
+			      pyramind matching histogram obtained and then compared to the histograms of the training set images using the histogram intersection
+			      metric as the distance measure. The prediction was then class of the test image which had the nearest distance to the training image.
+			      The accuracy of this method depended on the size of the dictionary and the number of points of each image used to create the dictionary.
+			      After testing various values of these parameters, the best accuracy obtained was 61.25%. 
 			    </p>
-			    
+
+			    <br>
+		            </br>
+
+			    <p>
+			      For the SVM method, the visual word representation of the images of the training set were used as input into the libsvm package. This gave
+			      an accuracy of 68.13%, an improvement over the previous method. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      <a href="documents/sceneClassificationExperimentalResults.pdf">Experiemental Analysis Report of the scene classification</a>
+			    </p>
+
+			     <br>
+			    </br>
+
                            
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
