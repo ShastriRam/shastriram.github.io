@@ -893,25 +893,58 @@
                         <div class="modal-body">
                             <h2>Humanoid Robotic Hand with Palm Actuation</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/hand/hand1.PNG" class="img-responsive img-centered" alt="">
+                            <p>
+			      This humanoid robotic hand was final project for 16-264 Humanoids course, taught by Professor Chris Atkenson. It done in collaboration with Miller Sakmar and Yichu Jin. The human hand is a complex device and it allows us to carry out all our daily tasks. Not only do the fingers move to grip objects, but also, the palm itself moves. About an inch from the fingers, the palm pivots, in addition to pivoting diagonally across the palm. Without this movement, objects will be more difficult to grip because the palm first wraps around and object and then the fingers secure it in place. All of the robotic hands today have finger acutation, that is, the fingers move in a way similar to human fingers. However very few robotic hands have palm actuation. Those that do are very expensive. As such, the aim of this project was to develop a humanoid robotic hand with palm acutation. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      The fingers of the hand were taken from a kids grabber toy. The palm was made from particle board. The top section of the hand, with the four fingers was attached to the top of the palm with a small hinge. A slanted cut was placed along the palm and the thumb was attached to this. This entire setup was then attached to the hand via a small hinge. These mimiced the two points of actuation similar to a human hand. Fishing wire was then woud through the fingers. This can be seen below. 
+			    </p>
+			    <figure>
+				<img src="img/portfolio/hand/palm.jpg" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> The design of the palm and fingers with the hinges showing the acutation points. 
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      The finshing line was connected to servos. An additional smaller motor was attached to the thumb to move it. A spring was attached to the back of the actuation point at the top of palm to return it to the resting position when a force was not being applied. The following two images show the final setup. 
+			    </p>
+			    
+			    <figure>
+				<img src="img/portfolio/hand/combine_images.jpg" class="img-responsive img-centered" width="600" height="400"> </img>
+				<figcaption style="text-align:center"> The final setup of the palm and fingers. 
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      To control the hand, a glove was retrofitted with flex sensors on each of the fingers and the palm. The flex sensors are resistors which change their resistance based on how much they are bent. This data was sent to the two Arduino Unos which transformed the reading from the sensors to the appropriate angle each servo needs to turn in order to move the fingers and palm of the robot hand in a manner similar to the human hand. Below is the project video which shows the palm in action. Below the video is a link which details the design and build process of the hand. 
+			      </p>
+			    
 			    <div class="embed-responsive embed-responsive-16by9">
 			      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/NTCotT_jZDQ"></iframe>
 			    </div>
-			    <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      <strong><a href="http://www.contrib.andrew.cmu.edu/~msakmar/">Further details of the design and build process</a>
                                     </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+			      </p>
+
+			    <br>
+			    </br>
+			    
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
