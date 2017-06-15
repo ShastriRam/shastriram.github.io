@@ -895,14 +895,14 @@
                             <hr class="star-primary">
                             <img src="img/portfolio/hand/hand1.PNG" class="img-responsive img-centered" alt="">
                             <p>
-			      This humanoid robotic hand was final project for 16-264 Humanoids course, taught by Professor Chris Atkenson. It done in collaboration with Miller Sakmar and Yichu Jin. The human hand is a complex device and it allows us to carry out all our daily tasks. Not only do the fingers move to grip objects, but also, the palm itself moves. About an inch from the fingers, the palm pivots, in addition to pivoting diagonally across the palm. Without this movement, objects will be more difficult to grip because the palm first wraps around and object and then the fingers secure it in place. All of the robotic hands today have finger acutation, that is, the fingers move in a way similar to human fingers. However very few robotic hands have palm actuation. Those that do are very expensive. As such, the aim of this project was to develop a humanoid robotic hand with palm acutation. 
+			      This humanoid robotic hand was final project for 16-264 Humanoids course, taught by Professor Chris Atkenson. It was done in collaboration with Miller Sakmar and Yichu Jin. The human hand is a complex device and it allows us to carry out all our daily tasks. Not only do the fingers move to grip objects, but also, the palm itself moves. About an inch from the fingers, the palm pivots, in addition to pivoting diagonally across the palm. Without this movement, objects will be more difficult to grip because the palm first wraps around and object and then the fingers secure it in place. All of the robotic hands today have finger acutation, that is, the fingers move in a way similar to human fingers. However very few robotic hands have palm actuation. Those that do are very expensive. As such, the aim of this project was to develop a humanoid robotic hand with both finger and palm actuation with only a budget of $300.
 			    </p>
 
 			    <br>
 			    </br>
 
 			    <p>
-			      The fingers of the hand were taken from a kids grabber toy. The palm was made from particle board. The top section of the hand, with the four fingers was attached to the top of the palm with a small hinge. A slanted cut was placed along the palm and the thumb was attached to this. This entire setup was then attached to the hand via a small hinge. These mimiced the two points of actuation similar to a human hand. Fishing wire was then woud through the fingers. This can be seen below. 
+			      The fingers of the hand were taken from a kids grabber toy. The palm was made from particle board. The top section of the hand, with the four fingers was attached to the top of the palm with a small hinge. A slanted cut was placed along the palm and the thumb was attached to this. This entire setup was then attached to the hand via a small hinge. These mimicked the two points of actuation similar to a human hand. Fishing wire was then wound through the fingers. This can be seen below. 
 			    </p>
 			    <figure>
 				<img src="img/portfolio/hand/palm.jpg" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
