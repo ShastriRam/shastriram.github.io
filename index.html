@@ -815,8 +815,35 @@
 			    </br>
 
 			    <p>
-			      To control the pendulum, 2 parallel PID controllers were used. One was used to control the angle of the rotating arm, and the other to control the inverted pendulum itself. The control value for each of these two individual PID loops were added and this value sent to motor. 
-			      </p>
+			      To control the pendulum, 2 parallel PID controllers were used. One was used to control the angle of the rotating arm, and the other to control the inverted pendulum itself. The control value for each of these two individual PID loops were added and the resulting control value sent to motor. First the dynamics of the system were derived and then modelled in MATLAB's Simulink environment. The controller was then coded in embedded C, put onto the controller and then the gains were tuned to get the best performance. The controller is shown below. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/pendulum/controllerSystem.PNG" class="img-responsive img-centered" alt="CAMERA" width="600" height="500"> </img>
+				<figcaption style="text-align:center"> The controller for the inverted pendulum. 
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      A GUI was created using MATLAB with the purpose of easily tuning the PID gains. The gains were set on the GUI then sent via a serial RS-232 communication interface to the microcontroller. If this were not done, each time the gains needed to be adjusted the code would have to be continuously modified and reloaded into the controller. After some tuning the controller was very successful.The pendulum balanced quite well and was very responsive to disturbances. When perturbed, the system corrected itself and returned to the desired reference position very quickly. The video below shows the pendulum in action. 
+			    </p>
+
+			     <br>
+			    </br>
+
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/19AqJKv2LbI"></iframe>
+			    </div>
+
+			    <br>
+			    </br>
+
                             
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
