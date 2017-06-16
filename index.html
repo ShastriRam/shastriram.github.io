@@ -783,7 +783,40 @@
                             <img src="img/portfolio/pendulum/pendulum1.jpg" class="img-responsive img-centered" alt="">
 
 			    <p>
+			      This project was a semester long project of 18-474 Embedded Control Systems course at Carnegie Mellon University. The goal of the project was to create a control system that would maintain the inverted pendulum upright and in the same position, and be robust to perturbations without becoming unstable. 
 			    </p>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      An aluminium chassis housed the electrical motor and gearbox. A quadrature encoder was attached to the output shaft of the gearbox. This gave the position the rotating arm. The inverted pendulum was attached to the end of the rotating arm. Another quadrature encoder was attached to the inverted pendulum so that the position of the arm would be known. A Microchip dsPICDEM2 development board was used to control the motor to ensure the inverted pendulum remained upright. A H-bridge allowed the direction of the  motor to be reversed and the MPLAB ICD served as the interface between the development board and the computer. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/pendulum/pendulumSetup1.PNG" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> The inverted pendulum setup. 
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/pendulum/pendulumSetup2.PNG" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> The PIC Development Board setup. 
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      To control the pendulum, 2 parallel PID controllers were used. One was used to control the angle of the rotating arm, and the other to control the inverted pendulum itself. The control value for each of these two individual PID loops were added and this value sent to motor. 
+			      </p>
                             
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
