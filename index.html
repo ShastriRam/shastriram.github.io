@@ -438,7 +438,7 @@
 			    <br>
                             </br>
 			    <p>
-			      All of the processing and classification occurs on the Arduini Mega micro-controller. The code runs the statechart pictured below. *Insert pic of statechart* 
+			      All of the processing and classification occurs on the Arduino Mega micro-controller. The code runs the statechart pictured below. *Insert pic of statechart* 
 			    </p>
 
 			    <br>
@@ -632,22 +632,98 @@
                         <div class="modal-body">
                             <h2>Augmented Reality with Planar Homographies</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <img src="img/portfolio/ar_1.JPG" class="img-responsive img-centered" alt="">
+                            <p>
+			      Augmented reailty superimposes one image on another image of the world, to provide a composite view. In order to do this, the transformation from the first image to the second image must be know. To illustrate this, I want to augment the image of the computer vision textbook, with the planar image of myself. Both images are shown below. 
+			    </p>
+
+			    <br>
+			     </br>
+
+			    <figure>
+				<img src="img/portfolio/augmentedReality/cv_desk.png" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> Image of the computer vision textbook on the desk. 
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			     </br>
+			    
+			    <figure>
+				<img src="img/portfolio/augmentedReality/me.jpg" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> Image of myself to augment onto the cover of the computer vision textbook above. 
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			     </br>
+
+			    <p>
+			      To determine the transformation needed to augment the planar image of myself onto the book cover, an planar image of the textbook was given. The FAST (Features from Accelerated Segment Test) corner point features were extracted from both images and then the FREAK (Fast Retina Keypoint) descriptor was used to extract the interest point descriptor for each corner point detected. The features were then matched by nearest distance using the sum of squared differences metric. Below you can see the matched points between the planar image of the book cover and the book on the table. 
+			    </p>
+
+			    <figure>
+				<img src="img/portfolio/augmentedReality/matchedPoints.PNG" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center">  Matched points between the planar image of the book cover and the book on the table.
+				  </figcaption>
+			    </figure>
+
+			    <p>
+			      With these matching points, the homogeneous tranformation from the planar book cover to the book cover on the table was calculated. This was calculated using the RANSAC with the Direct Linear Transform with normalization. Once the tranformation was known, the image of myself was then transformed and spliced onto the cover of the book on the table. The result is shown below. 
+			    </p>
+
+			    <br>
+			     </br>
+
+			    <figure>
+				<img src="img/portfolio/augmentedReality/autobiographyResult.jpg" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> Final Augmented Image
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			     </br>
+
+			    <p>
+			      Having augmented one image with another, I turned my sights to augmented one video with another. The goal of was to be able to augment a Kung Fu Panda video shown below, onto the cover of the book in the second video show below.  
+			    </p>
+
+			    <br>
+			     </br>
+			    
+			     <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eVAZvLfbniI"></iframe>
+			    </div>
+
+			    <br>
+			     </br>
+			     
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PQhu8Qa16yU"></iframe>
+			    </div>
+
+			    <br>
+			     </br>
+
+			    <p>
+			      Since a video is just simply frames of images played togeter fast, the process was similar to augmenting the previous images. The Kung Fu Panda video clip was considered to be a planar video source. Then for each video frame of the book video, the transformation was found between the planar image of the book cover to the book in the video frame. The corresponding video frame at the same timestamp in the Kung Fu Panda video clip was then transformed and spliced onto that video frame of the book. This was done for every video frame. The final result is shown below. Audio was not added. 
+			    </p>
+
+			    <br>
+			     </br>
+			     
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-8dWvt86AsA"></iframe>
+			    </div>
+
+			    <br>
+			     </br>
+
+			    <p>
+			      While the result looks good, it is can be improved by using a better feature point descriptor that is rotationally invariant such as ORB (Oriented FAST and Rotated BRIEF) descriptor, and possibly more investigation into the different feature point detectors can be done.
+			      </p>
+
+			    
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
