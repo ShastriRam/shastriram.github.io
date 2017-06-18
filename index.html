@@ -298,7 +298,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Shastri Ram 2016
+                        Copyright &copy; Shastri Ram 2017
                     </div>
                 </div>
             </div>
@@ -662,11 +662,17 @@
 			      To determine the transformation needed to augment the planar image of myself onto the book cover, an planar image of the textbook was given. The FAST (Features from Accelerated Segment Test) corner point features were extracted from both images and then the FREAK (Fast Retina Keypoint) descriptor was used to extract the interest point descriptor for each corner point detected. The features were then matched by nearest distance using the sum of squared differences metric. Below you can see the matched points between the planar image of the book cover and the book on the table. 
 			    </p>
 
+			    <br>
+			     </br>
+
 			    <figure>
 				<img src="img/portfolio/augmentedReality/matchedPoints.PNG" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
 				<figcaption style="text-align:center">  Matched points between the planar image of the book cover and the book on the table.
 				  </figcaption>
 			    </figure>
+
+			    <br>
+			     </br>
 
 			    <p>
 			      With these matching points, the homogeneous tranformation from the planar book cover to the book cover on the table was calculated. This was calculated using the RANSAC with the Direct Linear Transform with normalization. Once the tranformation was known, the image of myself was then transformed and spliced onto the cover of the book on the table. The result is shown below. 
