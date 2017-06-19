@@ -596,21 +596,57 @@
                             <h2>3D Image Reconstruction</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <p>
+			      For this project, two views of a Greek temple were given with the goal of creating a 3D reconstruction of the temple from the 2 images shown below. The code was written in MATLAB and the intrinsic or calibration matricies of the two cameras were given. First the Fundamental Matrix was calculate. The Fundamental Matrix encodes the epipolar geometry without the assumption of calibrated cameras. This was calculated using the 8-point algorithm, the 7-point algorithm and the 7-point algorithm with RANSAC. It was found that the 8-point algorithm gave the best solution. Once the Fundamental Matrix was calculate, it was straightforward to calculate the Essential Matrix, which encodes the epipolar geometry for the calibrated cameras. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/3D/twoImages.PNG" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> The two views of the temple
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      To create a 3D reconstruction, the depth of the each pixel must be calculated and for this to be done, each pixel in one image must be paired with its corresponding pixel in the second image. To do this the Essential Matrix is used with each point to find the epipolar line on which the corresponding point lies. When all the point to point correspondences were found, the camera matrix for each camera was found and triangulation was done. Linear triangulation was used and the 3D image was constructed using MATLAB's pointCloud function. The results can be seen below. This was the basic method for 3D reconstruction and there can be tweaks that can be done to improve the results. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/3D/reconstruction1.PNG" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> 3D Reconstruction View 1
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/3D/reconstruction2.PNG" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> 3D Reconstruction View 2
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/3D/reconstruction3.PNG" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> 3D Reconstruction View 3
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+			    
+                            
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -726,7 +762,7 @@
 			     </br>
 
 			    <p>
-			      While the result looks good, it is can be improved by using a better feature point descriptor that is rotationally invariant such as ORB (Oriented FAST and Rotated BRIEF) descriptor, and possibly more investigation into the different feature point detectors can be done.
+			      While the result looks good, it is can be improved by using a better feature point descriptor that is rotationally invariant such as ORB (Oriented FAST and Rotated BRIEF) descriptor, and possibly more investigation into the different feature point detectors can be done. This project was done in MATLAB. 
 			      </p>
 
 			    
