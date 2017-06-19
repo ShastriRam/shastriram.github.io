@@ -597,7 +597,7 @@
                             <hr class="star-primary">
                             <img src="img/portfolio/3dRecon_1.jpg" class="img-responsive img-centered" alt="">
                             <p>
-			      For this project, two views of a Greek temple were given with the goal of creating a 3D reconstruction of the temple from the 2 images shown below. The code was written in MATLAB and the intrinsic or calibration matricies of the two cameras were given. First the Fundamental Matrix was calculate. The Fundamental Matrix encodes the epipolar geometry without the assumption of calibrated cameras. This was calculated using the 8-point algorithm, the 7-point algorithm and the 7-point algorithm with RANSAC. It was found that the 8-point algorithm gave the best solution. Once the Fundamental Matrix was calculate, it was straightforward to calculate the Essential Matrix, which encodes the epipolar geometry for the calibrated cameras. 
+			      For this project, two views of a Greek temple were given, with the goal of creating a 3D reconstruction of the temple from the 2 images shown below. The code was written in MATLAB and the intrinsic or calibration matrices of the two cameras were given. First the Fundamental Matrix was calculated. The Fundamental Matrix encodes the epipolar geometry without the assumption of calibrated cameras. This was calculated using the 8-point algorithm, the 7-point algorithm and the 7-point algorithm with RANSAC. It was found that the 8-point algorithm gave the best solution. Once the Fundamental Matrix was calculated, it was straightforward to calculate the Essential Matrix, which encodes the epipolar geometry for the calibrated cameras. 
 			    </p>
 
 			    <br>
@@ -613,7 +613,7 @@
 			    </br>
 
 			    <p>
-			      To create a 3D reconstruction, the depth of the each pixel must be calculated and for this to be done, each pixel in one image must be paired with its corresponding pixel in the second image. To do this the Essential Matrix is used with each point to find the epipolar line on which the corresponding point lies. When all the point to point correspondences were found, the camera matrix for each camera was found and triangulation was done. Linear triangulation was used and the 3D image was constructed using MATLAB's pointCloud function. The results can be seen below. This was the basic method for 3D reconstruction and there can be tweaks that can be done to improve the results. 
+			      To create a 3D reconstruction, the depth of each pixel must be calculated and for this to be done, each pixel in one image must be paired with its corresponding pixel in the second image. To do this the Essential Matrix is used with each point to find the epipolar line on which the corresponding point lies. When all the point to point correspondences were found, the camera matrix for each camera was found and triangulation was done. Linear triangulation was used and the 3D image was constructed using MATLAB's pointCloud function. The results can be seen below. This was the basic method for 3D reconstruction and there can be tweaks that can be done to improve the results. 
 			    </p>
 
 			    <br>
@@ -670,7 +670,7 @@
                             <hr class="star-primary">
                             <img src="img/portfolio/ar_1.JPG" class="img-responsive img-centered" alt="">
                             <p>
-			      Augmented reailty superimposes one image on another image of the world, to provide a composite view. In order to do this, the transformation from the first image to the second image must be know. To illustrate this, I want to augment the image of the computer vision textbook, with the planar image of myself. Both images are shown below. 
+			      Augmented reailty superimposes one image on another image of the world, to provide a composite view. In order to do this, the transformation from the first image to the second image must be known. To illustrate this, I want to augment the image of the computer vision textbook, with the planar image of myself. Both images are shown below. 
 			    </p>
 
 			    <br>
@@ -727,7 +727,7 @@
 			     </br>
 
 			    <p>
-			      Having augmented one image with another, I turned my sights to augmented one video with another. The goal of was to be able to augment a Kung Fu Panda video shown below, onto the cover of the book in the second video show below.  
+			      Having augmented one image with another, I turned my sights to augment one video with another. The goal was to be able to augment a Kung Fu Panda video shown below, onto the cover of the book in the second video show below.  
 			    </p>
 
 			    <br>
@@ -949,7 +949,7 @@
 			    </br>
 
 			    <p>
-			      A GUI was created using MATLAB with the purpose of easily tuning the PID gains. The gains were set on the GUI then sent via a serial RS-232 communication interface to the microcontroller. If this were not done, each time the gains needed to be adjusted the code would have to be continuously modified and reloaded into the controller. After some tuning the controller was very successful.The pendulum balanced quite well and was very responsive to disturbances. When perturbed, the system corrected itself and returned to the desired reference position very quickly. The video below shows the pendulum in action. 
+			      A GUI was created using MATLAB with the purpose of easily tuning the PID gains. The gains were set on the GUI then sent via a serial RS-232 communication interface to the microcontroller. If this were not done, each time the gains needed to be adjusted the code would have to be continuously modified and reloaded into the controller. After some tuning the controller was very successful. The pendulum balanced quite well and was very responsive to disturbances. When perturbed, the system corrected itself and returned to the desired reference position very quickly. The video below shows the pendulum in action. 
 			    </p>
 
 			     <br>
@@ -1033,21 +1033,21 @@
 			    </br>
 
 			    <p>
-			      The only software provided were the base commands for moving controlling the motors, turning on the 2D scanning laser and communication. The robot communicated via WiFi with a laptop and programming was all done in MATLAB. Each week, additional functionality was added to the robot. It began with basic sensing the state of the robot such as distance travelled and speed which then progressed to feedback control, basic perception, state estimation and path planning. After this was completed more complicated functions were coded such as visual servoing, obstacle detection and localization. 
+			      The only software provided were the base commands for controlling the motors, turning on the 2D scanning laser and communication. The robot communicated via WiFi with a laptop and programming was all done in MATLAB. Each week, additional functionality was added to the robot. It began with basic sensing the state of the robot such as distance travelled and speed which then progressed to feedback control, basic perception, state estimation and path planning. After this was completed more complicated functions were coded such as visual servoing, obstacle detection and localization. 
 			    </p>
 
 			    <br>
 			    </br>
 
 			    <p>
-			      All of this was done in preparation for the final competition where two teams' robots were pitted against each other in a race to see which robot could pick up the most number of palettes. My team programmed a smart function in our robot which centered the robot if it were off center from a palette before it picked it up. This can be seen in action in the video below. The gave our robot an edge over the other robots and we emerged victorious.
+			      All of this was done in preparation for the final competition where two teams' robots were pitted against each other in a race to see which robot could pick up the most number of palettes. My team programmed a smart function in our robot which centered the robot if it were off center from a palette before it picked it up. This can be seen in action in the video below. This gave our robot an edge over the other robots and we emerged victorious.
 			    </p>
 
 			    <br>
 			    </br>
 
 			    <p>
-			      This was by far one of the best classes I took during my undergrad at Carnegie Mellon. It was a very practical class and I got to apply my theoretical robotics knowledge. Possibly even more importantly it taught me a lot of collaboration and team work skills, which is a very important assest to possess in the real world. 
+			      This was by far one of the best classes I took during my undergrad at Carnegie Mellon. It was a very practical class and I got to apply my theoretical robotics knowledge. Possibly even more importantly it taught me a lot of collaboration and team work skills, which is a very important asset to possess in the real world. 
 			    </p>
 
 			    <br>
