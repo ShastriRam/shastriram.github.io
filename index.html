@@ -558,22 +558,77 @@
                         <div class="modal-body">
                             <h2>Object Tracking in Videos</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <img src="img/portfolio/objTracking_1.jpg" class="img-responsive img-centered" alt="">
+                            <p>
+			      This project was an exploration into object tracking in video. In object tracking, a template, i.e. an object is selected in a video frame and the object continues to be tracked in each subsequent video frame. I implemented the Lucas-Kanade Tracker, the Mathew-Baker Inverse Compositional Tracker with and without correction, and the Mean Shift Tracker. 
+			    </p>
+
+			    <br>
+			    </br>
+			  
+			    <p>
+			      The Lucas Kanade Tracker is an additive tracker. It compares the template in the current frame to the position of the template in the previous frame. It makes incremental adjustments to the parameters of a warp, which is applied each iteration to the current frame, so that the object continues to be tracked. The result is shown in the video below. The Lucas-Kanade Additive tracker is slow since it is computationally expensive. It can also be seen that the template looses track of the vehicle as the video progresses.
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8Tx_-_rabjM"></iframe>
+			    </div>
+			 
+			    <br>
+			    </br>
+
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X6Tx13iswRQ"></iframe>
+			    </div>
+			 
+			    <br>
+			    </br>
+
+			    <p>
+			      The Matthew-Baker Tracker is an Inverse Compositional Tracker which means that it warps the template in the current frame and applies the inverse warp to the template in the previous frame. This is more efficient and reduces computation time. The result in the video shows that the car is tracked much better. 
+			    </p>
+
+			    <br>
+			    </br>
+			    
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FBDgsy7SzBU"></iframe>
+			    </div>
+
+			    <br>
+			    </br>
+
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LxGpiZHUOpE"></iframe>
+			    </div>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      Mean Shift Tracking applies a statistical approach to tracking. Itmodels the template as a distribution by applying a kernel the pixels within the template. For each subsequent frame, the template is moved until it matches the original template as close as possible. In other words, the template is shifted till it finds the mean of the original template, hence the name Mean Shift Tracking. The results are shown below. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t5RlIxmxtM4"></iframe>
+			    </div>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      The Lucas Kanade Tracker works well then the object is rigid and the appearance of the object does not change much. However to track a deformable object, this tracker would not be able to keep up. The Mean Shift Tracker handle this and track regions that change in appearance quite a bit.
+			    </p>
+
+			    <br>
+			    </br>
+                            
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
