@@ -567,7 +567,7 @@
 			    </br>
 			  
 			    <p>
-			      The Lucas Kanade Tracker is an additive tracker. It compares the template in the current frame to the position of the template in the previous frame. It makes incremental adjustments to the parameters of a warp, which is applied each iteration to the current frame, so that the object continues to be tracked. The result is shown in the video below. The Lucas-Kanade Additive tracker is slow since it is computationally expensive. It can also be seen that the template looses track of the vehicle as the video progresses.
+			      The Lucas Kanade Tracker is an additive tracker. It compares the template in the current frame to the position of the template in the previous frame. It makes incremental adjustments to the parameters of a warp, which is applied to each iteration to the current frame, so that the object continues to be tracked. The result is shown in the video below. The Lucas-Kanade Additive tracker is slow since it is computationally expensive. It can also be seen that the template loses track of the vehicle as the video progresses.
 			    </p>
 
 			    <br>
@@ -609,7 +609,7 @@
 			    </br>
 
 			    <p>
-			      Mean Shift Tracking applies a statistical approach to tracking. Itmodels the template as a distribution by applying a kernel the pixels within the template. For each subsequent frame, the template is moved until it matches the original template as close as possible. In other words, the template is shifted till it finds the mean of the original template, hence the name Mean Shift Tracking. The results are shown below. 
+			      Mean Shift Tracking applies a statistical approach to tracking. It models the template as a distribution by applying a kernel to the pixels within the template. For each subsequent frame, the template is moved until it matches the original template as close as possible. In other words, the template is shifted till it finds the mean of the original template, hence the name Mean Shift Tracking. The results are shown below. 
 			    </p>
 
 			    <br>
@@ -623,7 +623,7 @@
 			    </br>
 
 			    <p>
-			      The Lucas Kanade Tracker works well then the object is rigid and the appearance of the object does not change much. However, to track a deformable object, this tracker would not be able to keep up. The Mean Shift Tracker handles this well and tracks regions that change in appearance quite a bit.
+			      The Lucas Kanade Tracker works well when the object is rigid and the appearance of the object does not change much. However, to track a deformable object, this tracker would not be able to keep up. The Mean Shift Tracker handles this well and tracks regions that change in appearance quite a bit.
 			    </p>
 
 			    <br>
