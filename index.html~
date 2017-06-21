@@ -298,7 +298,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Shastri Ram 2016
+                        Copyright &copy; Shastri Ram 2017
                     </div>
                 </div>
             </div>
@@ -438,7 +438,7 @@
 			    <br>
                             </br>
 			    <p>
-			      All of the processing and classification occurs on the Arduini Mega micro-controller. The code runs the statechart pictured below. *Insert pic of statechart* 
+			      All of the processing and classification occurs on the Arduino Mega micro-controller. The code runs the statechart pictured below. *Insert pic of statechart* 
 			    </p>
 
 			    <br>
@@ -558,22 +558,77 @@
                         <div class="modal-body">
                             <h2>Object Tracking in Videos</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <img src="img/portfolio/objTracking_1.jpg" class="img-responsive img-centered" alt="">
+                            <p>
+			      This project was an exploration into object tracking in video. In object tracking, a template, i.e. an object is selected in a video frame and the object continues to be tracked in each subsequent video frame. I implemented the Lucas-Kanade Tracker, the Mathew-Baker Inverse Compositional Tracker with and without correction, and the Mean Shift Tracker. 
+			    </p>
+
+			    <br>
+			    </br>
+			  
+			    <p>
+			      The Lucas Kanade Tracker is an additive tracker. It compares the template in the current frame to the position of the template in the previous frame. It makes incremental adjustments to the parameters of a warp, which is applied to each iteration to the current frame, so that the object continues to be tracked. The result is shown in the video below. The Lucas-Kanade Additive tracker is slow since it is computationally expensive. It can also be seen that the template loses track of the vehicle as the video progresses.
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8Tx_-_rabjM"></iframe>
+			    </div>
+			 
+			    <br>
+			    </br>
+
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X6Tx13iswRQ"></iframe>
+			    </div>
+			 
+			    <br>
+			    </br>
+
+			    <p>
+			      The Matthew-Baker Tracker is an Inverse Compositional Tracker which means that it warps the template in the current frame and applies the inverse warp to the template in the previous frame. This is more efficient and reduces computation time. The result in the video shows that the car is tracked much better. 
+			    </p>
+
+			    <br>
+			    </br>
+			    
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FBDgsy7SzBU"></iframe>
+			    </div>
+
+			    <br>
+			    </br>
+
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LxGpiZHUOpE"></iframe>
+			    </div>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      Mean Shift Tracking applies a statistical approach to tracking. It models the template as a distribution by applying a kernel to the pixels within the template. For each subsequent frame, the template is moved until it matches the original template as close as possible. In other words, the template is shifted till it finds the mean of the original template, hence the name Mean Shift Tracking. The results are shown below. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t5RlIxmxtM4"></iframe>
+			    </div>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      The Lucas Kanade Tracker works well when the object is rigid and the appearance of the object does not change much. However, to track a deformable object, this tracker would not be able to keep up. The Mean Shift Tracker handles this well and tracks regions that change in appearance quite a bit.
+			    </p>
+
+			    <br>
+			    </br>
+                            
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -595,22 +650,58 @@
                         <div class="modal-body">
                             <h2>3D Image Reconstruction</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <img src="img/portfolio/3dRecon_1.jpg" class="img-responsive img-centered" alt="">
+                            <p>
+			      For this project, two views of a Greek temple were given, with the goal of creating a 3D reconstruction of the temple from the 2 images shown below. The code was written in MATLAB and the intrinsic or calibration matrices of the two cameras were given. First the Fundamental Matrix was calculated. The Fundamental Matrix encodes the epipolar geometry without the assumption of calibrated cameras. This was calculated using the 8-point algorithm, the 7-point algorithm and the 7-point algorithm with RANSAC. It was found that the 8-point algorithm gave the best solution. Once the Fundamental Matrix was calculated, it was straightforward to calculate the Essential Matrix, which encodes the epipolar geometry for the calibrated cameras. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/3D/twoImages.PNG" class="img-responsive img-centered" alt="CAMERA" width="700" height="500"> </img>
+				<figcaption style="text-align:center"> The two views of the temple
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      To create a 3D reconstruction, the depth of each pixel must be calculated and for this to be done, each pixel in one image must be paired with its corresponding pixel in the second image. To do this the Essential Matrix is used with each point to find the epipolar line on which the corresponding point lies. When all the point to point correspondences were found, the camera matrix for each camera was found and triangulation was done. Linear triangulation was used and the 3D image was constructed using MATLAB's pointCloud function. The results can be seen below. This was the basic method for 3D reconstruction and there can be tweaks that can be done to improve the results. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/3D/reconstruction1.PNG" class="img-responsive img-centered" alt="CAMERA" width="700" height="500"> </img>
+				<figcaption style="text-align:center"> 3D Reconstruction View 1
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/3D/reconstruction2.PNG" class="img-responsive img-centered" alt="CAMERA" width="700" height="500"> </img>
+				<figcaption style="text-align:center"> 3D Reconstruction View 2
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/3D/reconstruction3.PNG" class="img-responsive img-centered" alt="CAMERA" width="700" height="500"> </img>
+				<figcaption style="text-align:center"> 3D Reconstruction View 3
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+			    
+                            
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -632,22 +723,104 @@
                         <div class="modal-body">
                             <h2>Augmented Reality with Planar Homographies</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <img src="img/portfolio/ar_1.JPG" class="img-responsive img-centered" alt="">
+                            <p>
+			      Augmented reailty superimposes one image on another image of the world, to provide a composite view. In order to do this, the transformation from the first image to the second image must be known. To illustrate this, I want to augment the image of the computer vision textbook, with the planar image of myself. Both images are shown below. 
+			    </p>
+
+			    <br>
+			     </br>
+
+			    <figure>
+				<img src="img/portfolio/augmentedReality/cv_desk.png" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> Image of the computer vision textbook on the desk. 
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			     </br>
+			    
+			    <figure>
+				<img src="img/portfolio/augmentedReality/me.jpg" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> Image of myself to augment onto the cover of the computer vision textbook above. 
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			     </br>
+
+			    <p>
+			      To determine the transformation needed to augment the planar image of myself onto the book cover, an planar image of the textbook was given. The FAST (Features from Accelerated Segment Test) corner point features were extracted from both images and then the FREAK (Fast Retina Keypoint) descriptor was used to extract the interest point descriptor for each corner point detected. The features were then matched by nearest distance using the sum of squared differences metric. Below you can see the matched points between the planar image of the book cover and the book on the table. 
+			    </p>
+
+			    <br>
+			     </br>
+
+			    <figure>
+				<img src="img/portfolio/augmentedReality/matchedPoints.PNG" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center">  Matched points between the planar image of the book cover and the book on the table.
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			     </br>
+
+			    <p>
+			      With these matching points, the homogeneous tranformation from the planar book cover to the book cover on the table was calculated. This was calculated using the RANSAC with the Direct Linear Transform with normalization. Once the tranformation was known, the image of myself was then transformed and spliced onto the cover of the book on the table. The result is shown below. 
+			    </p>
+
+			    <br>
+			     </br>
+
+			    <figure>
+				<img src="img/portfolio/augmentedReality/autobiographyResult.jpg" class="img-responsive img-centered" alt="CAMERA" width="350" height="250"> </img>
+				<figcaption style="text-align:center"> Final Augmented Image
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			     </br>
+
+			    <p>
+			      Having augmented one image with another, I turned my sights to augment one video with another. The goal was to be able to augment a Kung Fu Panda video shown below, onto the cover of the book in the second video show below.  
+			    </p>
+
+			    <br>
+			     </br>
+			    
+			     <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eVAZvLfbniI"></iframe>
+			    </div>
+
+			    <br>
+			     </br>
+			     
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PQhu8Qa16yU"></iframe>
+			    </div>
+
+			    <br>
+			     </br>
+
+			    <p>
+			      Since a video is just simply frames of images played togeter fast, the process was similar to augmenting the previous images. The Kung Fu Panda video clip was considered to be a planar video source. Then for each video frame of the book video, the transformation was found between the planar image of the book cover to the book in the video frame. The corresponding video frame at the same timestamp in the Kung Fu Panda video clip was then transformed and spliced onto that video frame of the book. This was done for every video frame. The final result is shown below. Audio was not added. 
+			    </p>
+
+			    <br>
+			     </br>
+			     
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-8dWvt86AsA"></iframe>
+			    </div>
+
+			    <br>
+			     </br>
+
+			    <p>
+			      While the result looks good, it is can be improved by using a better feature point descriptor that is rotationally invariant such as ORB (Oriented FAST and Rotated BRIEF) descriptor, and possibly more investigation into the different feature point detectors can be done. This project was done in MATLAB. 
+			      </p>
+
+			    
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -780,22 +953,71 @@
                         <div class="modal-body">
                             <h2>Inverted Pendulum</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <img src="img/portfolio/pendulum/pendulum1.jpg" class="img-responsive img-centered" alt="">
+
+			    <p>
+			      This project was a semester long project of 18-474 Embedded Control Systems course at Carnegie Mellon University. The goal of the project was to create a control system that would maintain the inverted pendulum upright and in the same position, and be robust to perturbations without becoming unstable. It was done in collaboration with Athma Narayan. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      An aluminium chassis housed the electrical motor and gearbox. A quadrature encoder was attached to the output shaft of the gearbox. This gave the position the rotating arm. The inverted pendulum was attached to the end of the rotating arm. Another quadrature encoder was attached to the inverted pendulum so that the position of the arm would be known. A Microchip dsPICDEM2 development board was used to control the motor to ensure the inverted pendulum remained upright. A H-bridge allowed the direction of the  motor to be reversed and the MPLAB ICD served as the interface between the development board and the computer. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/pendulum/pendulumSetup1.PNG" class="img-responsive img-centered" alt="CAMERA" width="600" height="500"> </img>
+				<figcaption style="text-align:center"> The inverted pendulum setup. 
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/pendulum/pendulumSetup2.PNG" class="img-responsive img-centered" alt="CAMERA" width="600" height="500"> </img>
+				<figcaption style="text-align:center"> The PIC Development Board setup. 
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      To control the pendulum, 2 parallel PID controllers were used. One was used to control the angle of the rotating arm, and the other to control the inverted pendulum itself. The control value for each of these two individual PID loops were added and the resulting control value sent to motor. First the dynamics of the system were derived and then modelled in MATLAB's Simulink environment. The controller was then coded in embedded C, put onto the controller and then the gains were tuned to get the best performance. The controller is shown below. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <figure>
+				<img src="img/portfolio/pendulum/controlSystem.PNG" class="img-responsive img-centered" alt="CAMERA" width="600" height="500"> </img>
+				<figcaption style="text-align:center"> The controller for the inverted pendulum. 
+				  </figcaption>
+			    </figure>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      A GUI was created using MATLAB with the purpose of easily tuning the PID gains. The gains were set on the GUI then sent via a serial RS-232 communication interface to the microcontroller. If this were not done, each time the gains needed to be adjusted the code would have to be continuously modified and reloaded into the controller. After some tuning the controller was very successful. The pendulum balanced quite well and was very responsive to disturbances. When perturbed, the system corrected itself and returned to the desired reference position very quickly. The video below shows the pendulum in action. 
+			    </p>
+
+			     <br>
+			    </br>
+
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/19AqJKv2LbI"></iframe>
+			    </div>
+
+			    <br>
+			    </br>
+
+                            
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -856,22 +1078,43 @@
                         <div class="modal-body">
                             <h2>Mobile Robot Programming</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <img src="img/portfolio/mobileRobotics/mobileRobot1.PNG" class="img-responsive img-centered" alt="">
+
+			    <p>
+			      Mobile Robot Programming was a semester long course, taught by Professor Alonzo Kelly. The main aim of the course was to teach the students how to create the software for a mobile robot. The robots were Neato vacuum robots which had been retrofitted custom hardware and software such that it became a mobile forktruck. My team consisted of three members Ben Post, Jake Kligensmith and myself. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      The only software provided were the base commands for controlling the motors, turning on the 2D scanning laser and communication. The robot communicated via WiFi with a laptop and programming was all done in MATLAB. Each week, additional functionality was added to the robot. It began with basic sensing the state of the robot such as distance travelled and speed which then progressed to feedback control, basic perception, state estimation and path planning. After this was completed more complicated functions were coded such as visual servoing, obstacle detection and localization. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      All of this was done in preparation for the final competition where two teams' robots were pitted against each other in a race to see which robot could pick up the most number of palettes. My team programmed a smart function in our robot which centered the robot if it were off center from a palette before it picked it up. This can be seen in action in the video below. This gave our robot an edge over the other robots and we emerged victorious.
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <p>
+			      This was by far one of the best classes I took during my undergrad at Carnegie Mellon. It was a very practical class and I got to apply my theoretical robotics knowledge. Possibly even more importantly it taught me a lot of collaboration and team work skills, which is a very important asset to possess in the real world. 
+			    </p>
+
+			    <br>
+			    </br>
+
+			    <div class="embed-responsive embed-responsive-16by9">
+			      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nY39vrVBAJI"></iframe>
+			    </div>
+
+			    <br>
+			    </br>
+                           
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
